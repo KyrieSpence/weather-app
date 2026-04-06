@@ -1,7 +1,7 @@
 
 document.querySelector('#search').addEventListener('click', () => {
     const city = document.querySelector('#city-name').value;
-    const apiKey = 'dc7e43da8933998603672ebf06aae5bc';
+    const apiKey = config.apiKey;
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
 
     fetch(url)
